@@ -48,7 +48,7 @@ public class UserRegistor {
 		 
 	 }
 	 
-	 @Test(dataProvider="getLoginUserData",groups= {"sanity"})
+	 @Test(dataProvider="getLoginUserData",groups= {"regression"})
 	 public void userLogin(String fname,String lname,String email,String pwd) throws IOException, InterruptedException
 	 {
 		 System.setProperty("webdriver.chrome.driver", "C:\\Users\\VENKATA MAHESH\\Desktop\\Selenium Automation KT Details\\SeleniumPractice\\drivers\\chromedriver.exe");
@@ -76,7 +76,7 @@ public class UserRegistor {
 		
 	 }
 	 
-	@Test(groups= {"sanity"})
+	@Test(groups= {"regression"})
 	 public void HandleDropdownlist()
 	 {
 		 System.setProperty("webdriver.chrome.driver", "C:\\Users\\VENKATA MAHESH\\Desktop\\Selenium Automation KT Details\\SeleniumPractice\\drivers\\chromedriver.exe");
@@ -136,7 +136,7 @@ public class UserRegistor {
 	 }
 	 
 	 
-	 @Test(groups= {"regression"},invocationCount=4,successPercentage=75)
+	 @Test(groups= {"sanity"},invocationCount=4,successPercentage=75)
 	 public void HandleMouseOverEvents()
 	 {
 		 
