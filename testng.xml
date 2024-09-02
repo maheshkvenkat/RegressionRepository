@@ -1,0 +1,16 @@
+<suite name="C360 Project">
+	<test name="RegressionTest">
+		<Listeners>
+			<Listener name="selenium.TestList" />
+		</Listeners>
+		<groups>
+			<run>
+				<include name="regression" />
+			</run>
+		</groups>
+		<classes>
+			<class name="seleniumKT.UserRegistor">
+			</class>
+		</classes>
+	</test>
+</suite>
